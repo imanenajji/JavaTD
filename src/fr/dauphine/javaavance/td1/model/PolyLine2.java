@@ -1,4 +1,4 @@
-package fr.dauphine.javaavance.td1;
+package fr.dauphine.javaavance.td1.model;
 
 import java.util.Objects;
 
@@ -27,6 +27,15 @@ public class PolyLine2 {
 		}		
 		
 	}
+	
+	//CORRECTION
+	/*public void add(Point p) {
+		if(list.size()==nbmax) {
+			throw new IllegalStateExpression("full");
+		}
+		list[nb++]=Object.requirednonnull(P)
+	}
+	*/
 	
 	public int pointCapacity() {
 		

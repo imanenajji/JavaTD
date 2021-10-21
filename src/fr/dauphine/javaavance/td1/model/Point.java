@@ -1,4 +1,4 @@
-package fr.dauphine.javaavance.td1;
+package fr.dauphine.javaavance.td1.model;
 
 import java.util.LinkedList;
 
@@ -44,7 +44,14 @@ public class Point {
 		this.x+=dx;
 		this.y+=dy;
 	}
-
+	//CORRECTION
+	//OU
+	//COPIE DEFENSIVE
+	/*public Point translate(int dx,int dy) {
+		return new Point(x+dx,y+dy);
+	}
+	*/
+	
 	public int getX() {
 		return x;
 	}
@@ -53,6 +60,14 @@ public class Point {
 
 	public int getY() {
 		return y;
+	}
+	
+	public void setX(int x) {
+		this.x = x;
+	}
+	
+	public void setY(int y) {
+		this.y = y;
 	}
 	
 	public static void main(String[] args) {

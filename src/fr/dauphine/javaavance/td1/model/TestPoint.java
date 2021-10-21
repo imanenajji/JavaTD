@@ -1,4 +1,4 @@
-package fr.dauphine.javaavance.td1;
+package fr.dauphine.javaavance.td1.model;
 
 public class TestPoint {
 

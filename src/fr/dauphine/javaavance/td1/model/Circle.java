@@ -1,6 +1,6 @@
-package fr.dauphine.javaavance.td1;
+package fr.dauphine.javaavance.td1.model;
 
-public class Circle {
+public class Circle  {
 	
 	Point centre;
 	int radius;
@@ -11,6 +11,14 @@ public class Circle {
 		this.radius=radius;
 		
 	}
+	//CORRECTION- COPIE DEFENSIVE
+	/*private final Point c;
+	private final int r;
+	public Circle(Point c, int r) {
+		this.c=new Point(c.getX(),c.getY());
+		this.r=r;
+	}
+	*/
 	
 	public void translate(int dx, int dy) {
 		this.centre.translate(dx, dy);
@@ -37,8 +45,16 @@ public class Circle {
 		}
 		return false;	
 	}
-	
-	
+	//Correction
+	/*public static boolean contains(Point p, Circle...circles) {
+		for (Circle circle:circles) {
+			 if(circle.contains(p)) {
+				 return true;
+			 }
+		}
+		return false;	
+	}
+	*/
 	
 	@Override
 	public String toString() {
