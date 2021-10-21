@@ -4,8 +4,12 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionListener;
 
 import fr.dauphine.javaavance.td1.model.Rectangle;
+import fr.dauphine.javaavance.td1.view.MyDisplay;
 
 public class MouseController implements MouseMotionListener {
+	
+	Rectangle r;
+	MyDisplay m;
 
 	@Override
 	public void mouseDragged(MouseEvent e) {
